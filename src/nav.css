@@ -113,6 +113,18 @@
 
 .shoppingcart {
    display: inline-block;
+   position: relative;
+}
+
+.shoppingcart-popup {
+   position: absolute;
+   left: -16.0rem;
+   top: 3.9rem;
+   width: 19rem;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   text-align: left;
+   padding: 30px;
 }
 
 .Btn {

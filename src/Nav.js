@@ -28,14 +28,6 @@ const SearchBar = (props) => {
 
 }
 
-const ShoppingCart = (props) => {
-	return(
-		<div className="shoppingcart">
-			Cart
-		</div>
-
-	)
-}
 
 class Categories extends Component {
 	constructor(props) {
@@ -95,13 +87,40 @@ class PopLink extends Component {
 	}
 	render() {
 
-
 		let popup1 = (<div className="poplink-popup">{this.props.info}</div>);
 
 		return(
 
 			<div>
 				<div className="poplink" onMouseOver={this.showCategories} onMouseLeave={this.hideCategories}>{this.props.label}{(this.state.show && popup1)}</div>
+			</div>
+		)
+	}
+}
+
+class ShoppingCart extends Component {
+	constructor(props) {
+		super(props);
+		this.state={
+			show:false
+		}
+	}
+
+	showCategories = (e) => {
+		this.setState({show:true});
+	}
+
+	hideCategories = (e) => {
+		this.setState({show:false});
+	}
+
+	render() {
+
+		let popup1 = (<div className="shoppingcart-popup">Empty cart<br/><a href="#">Keep Shopping</a></div>);
+
+		return(
+			<div>
+				<div className="shoppingcart" onMouseOver={this.showCategories} onMouseLeave={this.hideCategories}>Cart{(this.state.show && popup1)}</div>
 			</div>
 		)
 	}
