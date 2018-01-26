@@ -9,10 +9,10 @@ const Top = () => {
 			<div className='row top'>
 					<h2>10 Days of Learning</h2>
 					<p>Personal Growth course are on sale for $11.99 each until 1/26</p>
-					<span>
-						<input type='search' placeholder="What do you want to learn?" />
-						<button className="btn_search iconify" />
-					</span>
+					<div class='bill-search'>
+						<input type='text' className='bill-searchbar' size='40' placeholder="What do you want to learn?" />
+						<a href="google.com"><img className='search-icon' src='img/search.svg'></img></a>
+					</div>
 			</div>
 		</div> 
 	)
@@ -23,7 +23,6 @@ const Bottom = () => {
 				<div className='col'>
 					<h2>65,000 online courses</h2>
 					<p>Explore a variety of fresh topics</p>
-
 				</div>				
 				<div className='col'>
 					<h2>Expert instruction</h2>
