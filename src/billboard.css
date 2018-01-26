@@ -6,8 +6,6 @@
     background-size: cover;
     display: block;
 	text-align: left;
-
-
 }
 .top {
 	width: 35%;
@@ -19,7 +17,6 @@
 }
 .bottom {
 	width: 100%;
-
 	margin-bottom: 50px;
 	display: flex;
 	align-items:flex-end;
