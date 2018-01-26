@@ -6,7 +6,7 @@ class Footer extends Component {
 	render(){
 		return(
 			<div className='foot-container'>
-				//Top Footer
+				{/* Top Footer */}
 				<div className="top-footer">
 					<div className="top-footer--linkbox">
 						<a href="#">Udemy for Business</a>
@@ -30,10 +30,13 @@ class Footer extends Component {
 					</div>
 					<button className="top-footer--button">English</button>
 				</div>
-				//Bottom footer
+				{/* Bottom footer */}
 				<div className="bottom-footer">
-					<div className="bottom-footer--logo"></div>
-					<div className="bottom-footer--cp"></div>
+					<div className='bottom-footer--left'>
+						<img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="10%"/>
+						<div className="bottom-footer--cp">Copyright © 2018 Udemy, Inc.</div>	
+					</div>
+	
 					<div className="bottom-footer--right">
 						<a href="#">Terms</a>
 						<a href="#">Privacy Policy and Cookie Policy</a>

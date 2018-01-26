@@ -87,3 +87,25 @@ p.course-item--rating__total {
 .marketlinks-box__teal {
 	background-image: url('./marketFolder/teal.jpg')
 }
+
+.bottom-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	
+}
+
+.bottom-footer--left {
+	display: flex;
+	flex-direction: row;
+}
+
+.bottom-footer--right {
+	margin: 20px;
+}
+
+.bottom-footer--right > a {
+	margin: 5px;
+}
