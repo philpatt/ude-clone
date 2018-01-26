@@ -23,15 +23,15 @@ const Bottom = () => {
 		<div className='row bottom'>
 				<div className='col'>
 					<h4>65,000 online courses</h4>
-					<p>Explore a variety of fresh topics</p>
+					<p className='p'>Explore a variety of fresh topics</p>
 				</div>				
 				<div className='col'>
 					<h4>Expert instruction</h4>
-					<p>Explore a variety of fresh topics</p>
+					<p className='p'>Explore a variety of fresh topics</p>
 				</div>
 				<div className='col'>
 					<h4>Lifetime access</h4>
-					<p>Learn on your schedule</p>
+					<p className='p'>Learn on your schedule</p>
 				</div>
 		</div>
 	)
