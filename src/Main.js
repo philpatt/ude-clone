@@ -7,6 +7,19 @@ import Achieve from './Achieve.js';
 import Tag from './Tag.js';
 import BizTags from './BizTags.js';
 
+const courseInfo = {
+	headerTitle: 'Top Courses in "Development"',
+	courseContent: {
+		title: 'The Course',
+		author: 'The Author',
+		ratingAvg: 4.5,
+		ratingTotal: 714,
+		priceOld: '$199.99',
+		priceNew: '$12.99'
+	}
+}
+
+// console.log(courseInfo);
 
 
 class Main extends Component {
@@ -16,11 +29,11 @@ class Main extends Component {
 
 				<Billboard />
 
-				<Course  />
+				<Course courseInfo={courseInfo} />
 
-				<Course  />
+				<Course courseInfo={courseInfo} />
 
-				<Course  />
+				<Course courseInfo={courseInfo} />
 
 				<MarketLinks />
 
