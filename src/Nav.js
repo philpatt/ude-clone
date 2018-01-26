@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./nav.css";
 
 
+
 const Promo = (props) => {
 
 	if(props.promo.show){
@@ -16,12 +17,7 @@ const Promo = (props) => {
 	}
 
 }
-const Categories = (props) => {
-	return(
-		<div className="categories">Categories</div>
-	)
 
-}
 const SearchBar = (props) => {
 	return(
 		<div className="searchbar" >
@@ -31,14 +27,7 @@ const SearchBar = (props) => {
 	)
 
 }
-const PopLink = (props) => {
-	return(
-		<div>
-			<div className="poplink">Udemy for Business</div>
-			<div className="poplink">Become an Instructor</div>
-		</div>
-	)
-}
+
 const ShoppingCart = (props) => {
 	return(
 		<div className="shoppingcart">
@@ -47,6 +36,77 @@ const ShoppingCart = (props) => {
 
 	)
 }
+
+class Categories extends Component {
+	constructor(props) {
+		super(props);
+		this.state={
+			show:false
+		}
+	}
+
+	showCategories = (e) => {
+		this.setState({show:true});
+	}
+
+	hideCategories = (e) => {
+		this.setState({show:false});
+	}
+	render () {
+
+		let popup = (<div className="categories-popup">
+			<div>Web Development</div>
+			<div>Mobile Apps</div>
+			<div>Programming Languages</div>
+			<div>Game Development</div>
+			<div>Databases</div>
+			<div>Photography</div>
+			<div>Health & Fitness</div>
+			<div>Teacher Training</div>
+			<div>Music</div>
+			<div>Academics</div>
+			<div>Language</div>
+			<div>Test Prep</div>
+		</div>);
+
+		return (
+			<div className="categories" onMouseOver={this.showCategories} onMouseDown={this.showCategories} onMouseLeave={this.hideCategories} >
+				Categories
+				{(this.state.show && popup)}
+			</div>
+		)
+	}
+}
+
+class PopLink extends Component {
+	constructor(props) {
+		super(props);
+		this.state={
+			show:false
+		}
+	}
+
+	showCategories = (e) => {
+		this.setState({show:true});
+	}
+
+	hideCategories = (e) => {
+		this.setState({show:false});
+	}
+	render() {
+
+
+		let popup1 = (<div className="poplink-popup">{this.props.info}</div>);
+
+		return(
+
+			<div>
+				<div className="poplink" onMouseOver={this.showCategories} onMouseLeave={this.hideCategories}>{this.props.label}{(this.state.show && popup1)}</div>
+			</div>
+		)
+	}
+}
+
 
 class Nav extends Component {
 	constructor(props){
@@ -73,7 +133,8 @@ class Nav extends Component {
 							<SearchBar />
 
 
-							<PopLink  />
+							<PopLink label="Udemy for Business" info="asjkdfh kalsdf klajhsdf kasjf kajhsf kasjfhksajh klf"/>
+							<PopLink label="Become an Instructor" info="jashfdlka sdfhj askldf aksh kalsjhf askjhf aksjhdf kajshdf aksjfh "/>
 							<ShoppingCart  />
 
 							<div className="btn-divs">
