@@ -1,41 +1,46 @@
 import React, { Component } from 'react';
-
+import "./nav.css";
 
 
 const Promo = (props) => {
 
 	if(props.promo.show){
 		return(
-			<div>
+			<div className="promo">
 				{ props.promo.message }
+				<div class="promo-close">X</div>
 			</div>
 		)
 	} else {
 		return null
 	}
-	
+
 }
 const Categories = (props) => {
 	return(
-		<div>Categories</div>	
+		<div className="categories">Categories</div>
 	)
 
 }
 const SearchBar = (props) => {
 	return(
-		<div>SearchBar</div>
-	)	
+		<div className="searchbar" >
+			<input className="searchbar-bar" type="text" size="40" />
+		</div>
+	)
 
 }
 const PopLink = (props) => {
 	return(
-		<div>PopLink</div>
+		<div className="poplink">PopLink</div>
 	)
 }
 const ShoppingCart = (props) => {
 	return(
-		<div>ShoppingCart</div>
-		
+		<div className="shoppingcart">
+			ShoppingCart
+		</div>
+
 	)
 }
 
@@ -52,17 +57,28 @@ class Nav extends Component {
 	}
 	render(){
 		return(
-			<div>
-				<Promo promo={ this.state.promo } />
-				<div className='Logo'></div>
-				<Categories />
-				<SearchBar />
-				<PopLink />
-				<ShoppingCart />
-				<button className='Btn'>Login</button>
-				<button className='Btn'>Signup</button>
+			<div >
+				<Promo  promo={ this.state.promo } />
+				<div className = "Nav">
+					<div className="row">
+
+							<div className='logo'></div>
+
+
+							<Categories  />
+							<SearchBar />
+
+
+							<PopLink  />
+							<ShoppingCart  />
+
+							<button className='Btn btn-login'>Log In</button>
+							<button className='Btn btn-signup'>Sign Up</button>
+
+					</div>
+				</div>
 			</div>
-		)	
+		)
 	}
 }
 
