@@ -19,6 +19,25 @@ const courseInfo = {
 	}
 }
 
+const marketInfo = {
+	headerTitle: 'Discover Our Popular Courses',
+	buttonContent: {
+		button0: {
+			title: 'Top Rated',
+			background: 'blue'
+		},
+		button1: {
+			title: 'Trending',
+			background: 'purp'
+		},
+		button2: {
+			title: 'New and Noteworthy',
+			background: 'teal'
+		}
+	}
+}
+
+
 // console.log(courseInfo);
 
 
@@ -35,7 +54,7 @@ class Main extends Component {
 
 				<Course courseInfo={courseInfo} />
 
-				<MarketLinks />
+				<MarketLinks marketInfo={marketInfo} />
 
 				<Achieve />
 

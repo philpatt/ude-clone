@@ -1,13 +1,12 @@
-.course-row {
-}
-
 .course-row--title {
 	text-align: left;
+	margin-left: 20px;
 }
 
 .course-row--list {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 .course-item {
@@ -31,4 +30,20 @@ h3.course-item--text__title {
 	position: relative;
 	bottom: 0;
 	right: 0; 
+}
+
+.marketlinks-box {
+	height: 80px; 
+	width: 300px;
+	border-radius: 6px;
+}
+
+.marketlinks-box__blue {
+	background-image: url('./marketFolder/blue.jpg')
+}
+.marketlinks-box__purp {
+	background-image: url('./marketFolder/purp.jpg')
+}
+.marketlinks-box__teal {
+	background-image: url('./marketFolder/teal.jpg')
 }
