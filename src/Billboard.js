@@ -11,8 +11,9 @@ const Top = () => {
 					<p>Personal Growth course are on sale for $11.99 each until 1/26</p>
 					<div class='bill-search'>
 						<input type='text' className='bill-searchbar' size='40' placeholder="What do you want to learn?" />
-						<a href="google.com"><img className='search-icon' src='img/search.svg'></img></a>
+						<img className='search-icon' src='img/search.svg' width='15px' height='15px'  />
 					</div>
+
 			</div>
 		</div> 
 	)

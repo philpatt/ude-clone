@@ -28,20 +28,24 @@
 	vertical-align: top;
 }
 .bill-search{
-	display: flex;
-	align-items:flex-end;
+   display: inline-block;
+   margin: 0 0.1rem;
 }
-.bill-search img {
-	width: 30px;
-	height: 30px;
-	z-index: 99;
-	padding-bottom: 5px;
-	background-color: white;
-}
+
 .bill-searchbar{
 	font-size: 1.0em;
-	padding: 10px;
+	padding: 10px 30px 10px 10px;
 	border: 1px solid #ddd;
 	color: #666;
+	width: 18rem;
+	position: relative;
+}
+.search-icon {
+	margin-left: -1.5rem;
+	margin-top: 0.9rem;
+	z-index: 2;
+	position: absolute;
+	color: red;
+
 }
 
