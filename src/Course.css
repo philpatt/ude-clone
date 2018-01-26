@@ -76,6 +76,13 @@ p.course-item--rating__total {
 	height: 80px; 
 	width: 300px;
 	border-radius: 6px;
+	box-shadow: 5px 5px 8px #ccc;
+}
+
+.marketlinks-box--title {
+	color: #fff;
+	margin-top: 24px;
+	font-size: 18px;
 }
 
 .marketlinks-box__blue {
