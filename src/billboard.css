@@ -10,11 +10,12 @@
 
 }
 .top {
-	width: 40%;
+	width: 35%;
 	display: inline-block;
 	color:white;
 	padding-top: 200px;
-	margin: auto;
+	margin: 0 100px;
+
 }
 .bottom {
 	width: 100%;
