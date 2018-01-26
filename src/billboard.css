@@ -18,12 +18,17 @@
 }
 .bottom {
 	width: 100%;
+
+	margin-bottom: 50px;
 	display: flex;
 	align-items:flex-end;
+	color: white;
 }
 .col{
 	margin: auto;
 	width: 33.33%;
+	height: 80px;
+	padding-bottom: 40px;
 	background-color: rgb(149,14,70);
 	vertical-align: top;
 }
@@ -46,6 +51,5 @@
 	z-index: 2;
 	position: absolute;
 	color: red;
-
 }
 

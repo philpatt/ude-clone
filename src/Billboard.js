@@ -22,15 +22,15 @@ const Bottom = () => {
 	return (
 		<div className='row bottom'>
 				<div className='col'>
-					<h2>65,000 online courses</h2>
+					<h4>65,000 online courses</h4>
 					<p>Explore a variety of fresh topics</p>
 				</div>				
 				<div className='col'>
-					<h2>Expert instruction</h2>
+					<h4>Expert instruction</h4>
 					<p>Explore a variety of fresh topics</p>
 				</div>
 				<div className='col'>
-					<h2>Lifetime access</h2>
+					<h4>Lifetime access</h4>
 					<p>Learn on your schedule</p>
 				</div>
 		</div>
