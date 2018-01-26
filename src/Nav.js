@@ -25,20 +25,24 @@ const Categories = (props) => {
 const SearchBar = (props) => {
 	return(
 		<div className="searchbar" >
-			<input className="searchbar-bar" type="text" size="40" />
+			<input className="searchbar-bar" type="text"  />
+			<img className="searchbar-icon" src="../img/search.svg" width="15px" height="15px"/>
 		</div>
 	)
 
 }
 const PopLink = (props) => {
 	return(
-		<div className="poplink">PopLink</div>
+		<div>
+			<div className="poplink">Udemy for Business</div>
+			<div className="poplink">Become an Instructor</div>
+		</div>
 	)
 }
 const ShoppingCart = (props) => {
 	return(
 		<div className="shoppingcart">
-			ShoppingCart
+			Cart
 		</div>
 
 	)
@@ -62,7 +66,7 @@ class Nav extends Component {
 				<div className = "Nav">
 					<div className="row">
 
-							<div className='logo'></div>
+							<div className='logo'><img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="100%"/></div>
 
 
 							<Categories  />
