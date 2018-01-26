@@ -51,10 +51,11 @@ class Main extends Component {
 				<Course courseInfo={courseInfo} />
 
 				<Course courseInfo={courseInfo} />
+				
+				<MarketLinks marketInfo={marketInfo} />
 
 				<Course courseInfo={courseInfo} />
 
-				<MarketLinks marketInfo={marketInfo} />
 
 				<Achieve />
 
