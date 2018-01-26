@@ -14,16 +14,14 @@ class CourseItem extends Component {
 					<img src="https://www.fillmurray.com/300/200" alt="A course of course!"/>
 				</div>
 				<div className="course-item--text">
-					<h3 className="course-item--text__title">The Course</h3>
-					<h6 className="course-item--text__author">The Author</h6>
+					<h3 className="course-item--text__title">How to Not Give an Eff'...</h3>
+					<h5 className="course-item--text__author">Bill Murray</h5>
 					<div className="course-item--rating">
-						<div className="course-item--rating__stars">12345</div>
-						<div className="course-item--rating__avg">4.5</div>
-						<div className="course-item--rating__total">714</div>
+						<p className="course-item--rating__avg">4.8<span className="course-item--rating__total">  (714)</span></p>
+						{/* <img className="course-item--rating__stars" src="./marketFolder/stars.png" alt="stars" /> */}
 					</div>
 					<div className="course-item--price">
-						<div className="course-item--price__old">$199.99</div>
-						<div className="course-item--price__new">$11.99</div>
+						<p className="course-item--price__old"><del>$199.99</del><span className="course-item--price__new"> $11.99</span></p>
 					</div>
 				</div>
 			</div>

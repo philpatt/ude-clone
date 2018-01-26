@@ -1,3 +1,8 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+  background-color: #F7F8FA;
+}
+
 .course-row--title {
 	text-align: left;
 	margin-left: 20px;
@@ -10,10 +15,11 @@
 }
 
 .course-item {
-	background-color: #bbb;
+	background-color: #fff;
 	margin: 8px;
 	height: 290px;
 	width: 216px;
+	box-shadow: 5px 5px 8px #ccc;
 }
 
 .course-item--image > img {
@@ -21,15 +27,49 @@
 	width: 216px;
 }
 
+.course-item--text {
+	text-align: left;
+	margin-left: 12px;
+}
+
 h3.course-item--text__title {
-	height: 42px; 
-	width: 191px;
+	/* height: 42px;  */
+	/* width: 191px; */
+	margin-top: 2px;	
+	margin-bottom: 5px;	
+}
+
+h5.course-item--text__author {
+	color: #7F858D;
+	margin-top: 2px;
+}
+
+
+
+p.course-item--rating__total {
+	color: #A1A7B3;
+	font-size: 12px;
+	margin: 1em;
 }
 
 .course-item--price {
-	position: relative;
-	bottom: 0;
-	right: 0; 
+	/* position: relative; */
+	text-align: right;
+	margin-right: 12px;
+	margin-bottom: 6px;
+
+
+}
+
+.course-item--price__old {
+	color: #686F79;
+	font-size: 13px;
+}
+
+.course-item--price__new {
+	font-weight: 600;
+	font-size: 20px;
+	color: #000;
 }
 
 .marketlinks-box {
