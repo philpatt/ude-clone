@@ -47,6 +47,7 @@ class Categories extends Component {
 	render () {
 
 		let popup = (<div className="categories-popup">
+			<div className="fake"></div>
 			<div>Web Development</div>
 			<div>Mobile Apps</div>
 			<div>Programming Languages</div>
@@ -87,7 +88,7 @@ class PopLink extends Component {
 	}
 	render() {
 
-		let popup1 = (<div className="poplink-popup">{this.props.info}</div>);
+		let popup1 = (<div className="poplink-popup"><div className="fake"></div>{this.props.info}</div>);
 
 		return(
 
@@ -116,7 +117,7 @@ class ShoppingCart extends Component {
 
 	render() {
 
-		let popup1 = (<div className="shoppingcart-popup">Empty cart<br/><a href="#">Keep Shopping</a></div>);
+		let popup1 = (<div className="shoppingcart-popup"><div className="fake"></div>Empty cart<br/><a href="#">Keep Shopping</a></div>);
 
 		return(
 			<div>
