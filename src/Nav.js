@@ -72,9 +72,10 @@ class Nav extends Component {
 							<PopLink  />
 							<ShoppingCart  />
 
-							<button className='Btn btn-login'>Log In</button>
-							<button className='Btn btn-signup'>Sign Up</button>
-
+							<div className="btn-divs">
+								<button className='Btn btn-login'>Log In</button>
+								<button className='Btn btn-signup'>Sign Up</button>
+							</div>
 					</div>
 				</div>
 			</div>

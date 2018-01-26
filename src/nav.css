@@ -34,7 +34,7 @@
 
 .categories {
    display: inline-block;
-
+   margin-right: 10%;
 }
 
 .searchbar {
@@ -73,6 +73,7 @@
 .btn-divs {
    position: absolute;
    left: 85%;
+   display: inline-block;
 }
 
 .btn-login {
